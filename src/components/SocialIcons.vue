@@ -19,8 +19,8 @@
 const icons = [
   { name: 'Instagram', src: '/icons/instagram.svg', href: 'https://instagram.com' },
   { name: 'X',         src: '/icons/x.svg',  href: 'https://x.com' },
-  { name: 'Facebook',  src: '/icons/facebook.svg', href: 'https://facebook.com' },
-  { name: 'LinkedIn',  src: '/icons/linkedin.svg', href: 'https://linkedin.com' }
+  { name: 'LinkedIn',  src: '/icons/linkedin.svg', href: 'https://linkedin.com' },
+    { name: 'Facebook',  src: '/icons/facebook.svg', href: 'https://facebook.com' },
 ]
 </script>
 
