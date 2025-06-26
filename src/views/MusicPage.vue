@@ -1,17 +1,17 @@
 <template>
     <transition name="fade-slide">
-    <div class="page" v-if="showPage">
-        <div class="overlay">
-        <Header />
-        <LogoCircle logoSrc="/music-logo.png" />
-        <DescriptionBox :noBackground="false"
-        title="MusicFest"
-        text="This year's electronic music festival is set to dazzle audiences with an incredible array of renowned artists from around the world." 
-        />
-        <LinkButton v-for="(link, i) in links" :key="i" :text="link.text" :href="link.href" />
-        <SocialIcons />
+        <div class="page" v-if="showPage">
+            <div class="overlay">
+            <Header />
+            <LogoCircle logoSrc="/music-logo.png" />
+            <DescriptionBox :noBackground="false"
+            title="MusicFest"
+            text="This year's electronic music festival is set to dazzle audiences with an incredible array of renowned artists from around the world." 
+            />
+            <LinkButton v-for="(link, i) in links" :key="i" :text="link.text" :href="link.href" />
+            <SocialIcons />
+            </div>
         </div>
-    </div>
     </transition>
 </template>
 
@@ -23,7 +23,7 @@ const showPage = ref(false)
 onMounted(() => {
   setTimeout(() => {
     showPage.value = true
-  }, 100) // slight delay to trigger enter transition
+  }, 100) 
 })
 import Header from '../components/Header.vue'
 import LogoCircle from '../components/LogoCircle.vue'
@@ -49,7 +49,7 @@ const links = [
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('/music-bg.jpg');
+  background-image: url('/music-bg.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
