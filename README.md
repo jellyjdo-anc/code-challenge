@@ -1,6 +1,6 @@
 # Code Challenge
 
-This project is a creative Vue 3 implementation of two interactive landing pages for a fictional experience platform.
+This project is a creative Vue 3 implementation of two interactive landing pages for a experience platform.
 
 ---
 
@@ -12,27 +12,17 @@ This project is a creative Vue 3 implementation of two interactive landing pages
 - **Scoped transitions and animations**
 - **Reusable components** (e.g., `LogoCircle`, `DescriptionBox`, `LinkButton`, `SocialIcons`)
 - **Responsiveness**: Fully mobile-ready
-- **GitHub Pages / Vercel ready** ✅
 
 ---
 
-## 🎯 Pages
+## 🌍 Live Preview
 
-### 🎵 `/music`
-- Vibrant UI
-- Circular logo with white border
-- Link buttons with hover/click animations
-- Social icons with motion effects
-- Description with a semi-transparent background
+- 🎵 Music Page:  
+  👉 [https://code-challenge-murex.vercel.app/](https://code-challenge-murex.vercel.app/)
 
-### 🦓 `/zoo`
-- Nature-themed aesthetic
-- Unique logo and border color
-- Grid-based animal feature cards
-- No description background
-- Slight zoom + fade-in page load animation
+- 🦁 Zoo Page:  
+  👉 [https://code-challenge-murex.vercel.app/zoo](https://code-challenge-murex.vercel.app/zoo)
 
----
 
 ## 🧩 Features
 
