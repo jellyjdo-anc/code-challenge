@@ -6,7 +6,7 @@ This project is a creative Vue 3 implementation of two interactive landing pages
 
 ## 🚀 Tech Stack
 
-- **Vue 3 + `<script setup>`**
+- **Vue 3**
 - **Vite** (for fast dev server + builds)
 - **CSS Variables** for theming
 - **Scoped transitions and animations**
