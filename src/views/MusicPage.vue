@@ -43,7 +43,7 @@ const links = [
 
 <style scoped>
 .page {
-  max-width: 420px;
+  max-width: 430px;
   border-radius: 2rem;
   min-height: 100vh;
   display: flex;
