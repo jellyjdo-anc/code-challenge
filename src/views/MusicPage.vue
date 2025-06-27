@@ -1,10 +1,6 @@
 <template>
-     <div class="page music">
-    <div v-if="!isLoaded" class="loading-screen">
-      <p>Loading music experience...</p>
-    </div>
     <transition name="fade-slide">
-        <div class="page" v-if="isLoaded">
+        <div class="page" v-if="showPage">
             <div class="overlay">
             <Header />
             <LogoCircle logoSrc="/music-logo.png" />
@@ -17,23 +13,18 @@
             </div>
         </div>
     </transition>
-    </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
 
 const showPage = ref(false)
-const isLoaded = ref(false)
 
 onMounted(() => {
-  const bg = new Image()
-  bg.src = '/music-bg.webp'
-  bg.onload = () => {
-    isLoaded.value = true
-  }
+  setTimeout(() => {
+    showPage.value = true
+  }, 100) 
 })
-
 import Header from '../components/Header.vue'
 import LogoCircle from '../components/LogoCircle.vue'
 import DescriptionBox from '../components/DescriptionBox.vue'
@@ -78,30 +69,17 @@ const links = [
   --logo-border: #eda57e;
 }
 
-.loading-screen {
-  min-height: 100vh;
-  background-color: #000;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.25rem;
-  text-align: center;
-}
-
-.fade-enter-from {
+.fade-slide-enter-from {
   opacity: 0;
-  transform: scale(0.98);
+  transform: translateY(50px);
 }
-.fade-enter-to {
+.fade-slide-enter-to {
   opacity: 1;
-  transform: scale(1);
+  transform: translateY(0);
 }
-.fade-enter-active {
+.fade-slide-enter-active {
   transition: all 0.5s ease;
 }
-
 </style>
 
 
