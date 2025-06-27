@@ -1,8 +1,6 @@
 <template>
      <div class="page music">
-    <div v-if="!isLoaded" class="loading-screen">
-      <p>Loading music experience...</p>
-    </div>
+
     <transition name="fade-slide">
         <div class="page" v-if="isLoaded">
             <div class="overlay">
@@ -101,9 +99,6 @@ const links = [
 .fade-enter-active {
   transition: all 0.5s ease;
 }
-
-
-
 
 </style>
 
