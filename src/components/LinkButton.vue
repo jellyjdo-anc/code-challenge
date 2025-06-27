@@ -1,16 +1,12 @@
 <template>
-  <a
-    :href="href"
-    class="link-button"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  <a :href="href" class="link-button" target="_blank" rel="noopener noreferrer">
     {{ text }}
   </a>
 </template>
 
 <script setup>
-  defineProps(['text', 'href'])
+defineProps(['text', 'href'])
+
 </script>
 
 <style scoped>
@@ -23,25 +19,16 @@
   background-color: #46939c;
   color: white;
   font-weight: bold;
-  margin: 0.5rem auto;
+  margin-bottom: 0.5rem;
   border: none;
   cursor: pointer;
   text-decoration: none;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
 
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-
-.link-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-}
-
-/* Optional press feedback */
 .link-button:active {
-  transform: scale(0.97);
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+  transform: scale(0.96);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
 }
 </style>
